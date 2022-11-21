@@ -24,7 +24,7 @@ create table if not exists executor_album (
 create table if not exists track (
 	id serial primary key,
 	track_name varchar(100) not null unique,
-	duration integer not null,
+	duration_time integer not null,
 	album_id integer references album(id)
 );
 create table if not exists collection_of_songs (
